@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: white;
   
 }
 
@@ -40,10 +41,16 @@ body::before{
     backdrop-filter:  blur(100%);
     padding: 20px;   
 }
+/*utility*/
+.regular-txt{
+    font-weight: 400;
+}
+/*end utility*/
 
 /* Intput container */
 .input-container{
     position: relative;
+    margin-bottom: 25px;
 }
 .city-input{
     width: 100%;
@@ -76,3 +83,21 @@ body::before{
 
 }
 /* End Intput container */
+
+/* Weather info*/
+.weather-info{
+   
+    
+}
+
+.location-data-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.location{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+/* end Weather info*/
