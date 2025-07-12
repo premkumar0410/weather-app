@@ -17,8 +17,7 @@ body{
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +33,7 @@ body::before{
 
 .main-content{
    width: 300px;
-   height: 450px;
+   height: 500px;
    z-index: 1;
    background: linear-gradient(to top,rgb(0,0,0,0.15),rgba(255,255,255,0.15));
     border-radius: 13px;
@@ -44,6 +43,7 @@ body::before{
 /*utility*/
 .regular-txt{
     font-weight: 400;
+    
 }
 /*end utility*/
 
@@ -86,7 +86,9 @@ body::before{
 
 /* Weather info*/
 .weather-info{
-   
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
     
 }
 
@@ -100,4 +102,88 @@ body::before{
     align-items: center;
     gap: 6px;
 }
+
+.weather-summary-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weather-summary-img{
+    width: 120px;
+    height: 120px;
+}
+.weather-summary-info{
+    text-align: end;
+}
+
+.weather-condition-container{
+    display: flex;
+    justify-content: space-between;
+}
+.condition-item{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.condition-item span{
+    font-size: 30px;
+}
+
+.forecast-item-container{
+    display: flex;
+    gap: 10PX;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+}
+
+.forecast-item-container::-webkit-scrollbar{
+   width: 0;
+}
+
+.forecast-item-container::-webkit-scrollbar-track{
+    background:rgb(0,0,0,0.1);
+    border-radius: 99px;
+}
+
+.forecast-item-container::-webkit-scrollbar-thumb{
+    background: rgb(0,0,0,0.1);
+    border-radius: 99px;
+}
+.forecast-item{
+    max-width: 70px;
+    background: rgb(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    align-items: center;
+    border-radius: 13px;
+    transition: 0.3s ease;
+
+}
+.forecast-item:hover{
+    background: rgb(255,255,255,0.50);
+}
+
+.forecast-item-img{
+    width: 50px;
+}
+
 /* end Weather info*/
+
+
+/* initial Message */
+.section-message img{
+    width: 180px;
+    height: fit-content;
+}
+
+.section-message  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 25%;
+}
+/* end initial Message */
