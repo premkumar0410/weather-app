@@ -91,6 +91,9 @@ body::before{
    gap: 25px;
     
 }
+.current-data-txt{
+    font-size: 18px;
+}
 
 .location-data-container{
     display: flex;
@@ -146,7 +149,7 @@ body::before{
 }
 
 .forecast-item-container::-webkit-scrollbar-thumb{
-    background: rgb(0,0,0,0.1);
+    background: rgba(239, 239, 229, 0.15);
     border-radius: 99px;
 }
 .forecast-item{
